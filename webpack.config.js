@@ -162,6 +162,7 @@ module.exports = {
       filename: 'popup.html',
     }),
     new CopyWebpackPlugin([{from: 'source/assets', to: 'assets'}]),
+    new CopyWebpackPlugin([{from: 'node_modules/emoji-log/lib/index.js', to: 'js/emoji-log/lib/index.js'}]),
     extensionReloaderPlugin,
   ],
 
